@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>Controle</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<nav class="card">
+		<h1>Controle</h1>
+	</nav>
+
+	<section class="container">
+		<div class="card form">
+			<h1>Preencha os campos</h1>
+			<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" class="form-group">
+				<label for="name">Nome da despesa:</label>
+				<input class="nome" type="text" name="name" placeholder="Ex: Conta Luz"></input>
+				<label for="type">Tipo:</label>
+				<input class="tipo" placeholder="Ex: Conta" type="text" name="type"></input>
+				<label for="date">Data:</label>
+				<input class="data" type="date" name="date"></input>
+				<label for="value">Valor:</label>
+				<input class="valor" type="number" name="value" placeholder="R$"></input>
+				<button type="submit" class="insert" id="submit">Inserir</button>
+				<button class="clear">Limpar</button>
+			</form>
+		</div>
+	</section>
+
+
+	<section class="container">
+		<h1>Despesas</h1>
+		<div class="table card">
+			<table>
+				<tr>
+					<th>Nome</th>
+					<th>Tipo</th>
+					<th>Data</th>
+					<th>Valor</th>
+					<th></th>
+				</tr>
+
+			</table>
+		</div>
+
+	</section>
+
+	<script src="app.js"></script>
+</body>
+
+
+</html>
